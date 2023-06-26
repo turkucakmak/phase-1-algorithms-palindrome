@@ -1,9 +1,30 @@
-function isPalindrome(word) {
-  // Write your algorithm here
-}
+function isPalindrome(string) {
+  const word = string;
+  const array1 =[];
 
+  for (let j =0; j < word.length;j++){
+    array1.push(word[j]);
+  }
+  console.log(array1)
+
+  const array2 =[];
+  for (let i=word.length-1; i>=0; i--){
+    array2.push(word[i]);
+  }
+  console.log(array2);
+
+  return array1.toString() === array2.toString();
+
+}
+isPalindrome("racecar");
 /* 
-  Add your pseudocode here
+  1. get the word
+
+  4. write the word backwards
+  5. read it
+  6. compare results
+  7. if same, print true
+  8. if not, print false
 */
 
 /*
